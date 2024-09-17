@@ -17,6 +17,10 @@
 			</div>
 		</div>
 
+		<div class="col-xl-4">
+			$showPanel(SupportTicketPanel)
+		</div>
+
 		<% if $canViewPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel) || $canViewPanel(SupportTicketPanel) || $canViewPanel(Plastyk\Dashboard\Panels\UsefulLinksPanel) %>
 		<div class="row">
 			<div class="col-xl-4">

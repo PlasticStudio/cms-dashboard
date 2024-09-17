@@ -25,33 +25,21 @@ class SupportTicketPanel extends DashboardPanel
     {
         $data = parent::getData();
 
-        $data['ContactEmail'] = DashboardAdmin::config()->contact_email ?: false;
-        $data['ContactName'] = DashboardAdmin::config()->contact_name ?:
-            _t('MoreInformationPanel.YOURWEBDEVELOPER', 'your web developer');
-        $data['Content'] = $this->getContent();
+        $data['ContactEmail'] = DashboardAdmin::config()->contact_email;
 
         return $data;
     }
 
-    public function getContent()
-    {
-        return 'Test';
-        
-        $contactEmail = DashboardAdmin::config()->contact_email ?: false;
-        $contactName = DashboardAdmin::config()->contact_name ?:
-            _t('MoreInformationPanel.YOURWEBDEVELOPER', 'your web developer');
+    // public function getData()
+    // {
+    //     $data = parent::getData();
 
-        if ($contactEmail) {
-            $contactName = '<a href="mailto:' . $contactEmail . '">' . $contactName . '</a>';
-        }
+    //     $data['ContactEmail'] = DashboardAdmin::config()->contact_email ?: false;
+    //     $data['ContactName'] = DashboardAdmin::config()->contact_name ?:
+    //         _t('MoreInformationPanel.YOURWEBDEVELOPER', 'your web developer');
+    //     $data['Content'] = $this->getContent();
 
-        $content = _t(
-            'MoreInformationPanel.MOREINFORMATIONMESSAGE',
-            'How can we help you today?. Contact {contactName} if you would like any assistance',
-            'More information message',
-            ['contactName' => $contactName]
-        );
+    //     return $data;
+    // }
 
-        return DBField::create_field('HTMLText', $content);
-    }
 }

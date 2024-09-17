@@ -1,4 +1,4 @@
-<div class="dashboard-panel">
+<div class="dashboard-panel dashboard-panel__broken-links">
     
 
     <div class="dashboard-panel__toggle">

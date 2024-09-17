@@ -2,6 +2,5 @@
 Name: app-dashboard
 ---
 Plastyk\Dashboard\Admin\DashboardAdmin:
-  contact_email: 'email@example.com'
-  contact_name: 'Developer Name'
+  contact_email: 'support@example.com'
   panel_accent_color: '#efbc2a'
