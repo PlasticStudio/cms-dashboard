@@ -10,11 +10,7 @@ class BrokenLinksPanel extends DashboardPanel
 {
     public function canView($member = null)
     {
-        if (!Permission::checkMember($member, 'CMS_ACCESS_PropertiesAdmin')) {
-            return false;
-        }
-
-        return parent::canView($member);
+        return Permission::checkMember($member, 'CMS_ACCESS_ADMIN');
     }
 
     public function getData()
