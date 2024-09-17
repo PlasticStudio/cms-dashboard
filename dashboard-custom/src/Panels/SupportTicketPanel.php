@@ -35,6 +35,8 @@ class SupportTicketPanel extends DashboardPanel
 
     public function getContent()
     {
+        return 'Test';
+        
         $contactEmail = DashboardAdmin::config()->contact_email ?: false;
         $contactName = DashboardAdmin::config()->contact_name ?:
             _t('MoreInformationPanel.YOURWEBDEVELOPER', 'your web developer');
