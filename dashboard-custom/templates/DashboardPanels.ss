@@ -18,19 +18,19 @@
 		</div>
 
 		<% if $canViewPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel) || $canViewPanel(PlasticStudio\Panels\SupportTicketPanel) || $canViewPanel(Plastyk\Dashboard\Panels\UsefulLinksPanel) %>
-		<div class="row">			
-			<div class="col-xl-4">
-				$showPanel(PlasticStudio\Panels\SupportTicketPanel)
-			</div>
+			<div class="row">			
+				<div class="col-xl-4">
+					$showPanel(PlasticStudio\Panels\SupportTicketPanel)
+				</div>
 
-			<div class="col-xl-4">
-				$showPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel)
+				<div class="col-xl-4">
+					$showPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel)
+				</div>
+				
+				<div class="col-xl-4">
+					$showPanel(Plastyk\Dashboard\Panels\UsefulLinksPanel)
+				</div>
 			</div>
-			
-			<div class="col-xl-4">
-				$showPanel(Plastyk\Dashboard\Panels\UsefulLinksPanel)
-			</div>
-		</div>
 		<% end_if %>
 
 		<% if $canViewPanel(PlasticStudio\Panels\BrokenLinksPanel) %>
