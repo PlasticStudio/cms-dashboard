@@ -1,5 +1,7 @@
 <div id="dashboard-app">
 
+	<h1>PS Dashboard</h1>
+	
 	$showPanel(Plastyk\Dashboard\Panels\UpdatePanel)
 
 	<div class="container-fluid">
