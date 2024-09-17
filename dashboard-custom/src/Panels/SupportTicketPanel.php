@@ -6,6 +6,7 @@ use Plastyk\Dashboard\Admin\DashboardAdmin;
 use Plastyk\Dashboard\Model\DashboardPanel;
 use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\Security\Permission;
+use SilverStripe\SiteConfig\SiteConfig;
 use SilverStripe\View\Requirements;
 
 class SupportTicketPanel extends DashboardPanel
@@ -47,19 +48,9 @@ class SupportTicketPanel extends DashboardPanel
     public function getContent() {
 
         $contactEmail = DashboardAdmin::config()->contact_email ?: false;
-        $contactName = DashboardAdmin::config()->contact_name ?:
-            _t('MoreInformationPanel.YOURWEBDEVELOPER', 'your web developer');
+        $siteName = SiteConfig::current_site_config()->Title;
 
-        if ($contactEmail) {
-            $contactName = '<a href="mailto:' . $contactEmail . '">' . $contactName . '</a>';
-        }
-
-        $content = _t(
-            'MoreInformationPanel.MOREINFORMATIONMESSAGE',
-            'Custom dashboard panels are available. Contact {contactName} if you would like to discuss.',
-            'More information message',
-            ['contactName' => $contactName]
-        );
+        $content = '<p><a href="mailto:' . $contactEmail . '?subject=New support request from ' . $siteName . '" target="_blank">Contact us</a> if you would like any submit a support ticket or would like any assistance.</p>';
 
         return DBField::create_field('HTMLText', $content);
     }

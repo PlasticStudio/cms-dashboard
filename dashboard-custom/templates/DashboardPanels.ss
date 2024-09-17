@@ -1,6 +1,4 @@
 <div id="dashboard-app">
-
-	<h1>PS Dashboard</h1>
 	
 	$showPanel(Plastyk\Dashboard\Panels\UpdatePanel)
 
@@ -19,18 +17,14 @@
 			</div>
 		</div>
 
-		<div class="col-xl-4">
-			$showPanel(PlasticStudio\Panels\SupportTicketPanel)
-		</div>
-
 		<% if $canViewPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel) || $canViewPanel(PlasticStudio\Panels\SupportTicketPanel) || $canViewPanel(Plastyk\Dashboard\Panels\UsefulLinksPanel) %>
-		<div class="row">
+		<div class="row">			
 			<div class="col-xl-4">
-				$showPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel)
+				$showPanel(PlasticStudio\Panels\SupportTicketPanel)
 			</div>
 
 			<div class="col-xl-4">
-				$showPanel(PlasticStudio\Panels\SupportTicketPanel)
+				$showPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel)
 			</div>
 			
 			<div class="col-xl-4">
