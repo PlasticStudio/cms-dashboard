@@ -2,6 +2,7 @@
 
 namespace PlasticStudio\Panels;
 
+use OhDear\PhpSdk\OhDear;
 use SilverStripe\ORM\ArrayList;
 use SilverStripe\View\ArrayData;
 use SilverStripe\Security\Permission;
