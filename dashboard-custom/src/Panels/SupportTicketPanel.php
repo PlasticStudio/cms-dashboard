@@ -1,5 +1,7 @@
 <?php
 
+namespace PlasticStudio\Panels;
+
 use Plastyk\Dashboard\Admin\DashboardAdmin;
 use Plastyk\Dashboard\Model\DashboardPanel;
 use SilverStripe\ORM\FieldType\DBField;

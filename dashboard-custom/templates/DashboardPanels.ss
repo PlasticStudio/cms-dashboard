@@ -20,17 +20,17 @@
 		</div>
 
 		<div class="col-xl-4">
-			$showPanel(SupportTicketPanel)
+			$showPanel(PlasticStudio\Panels\SupportTicketPanel)
 		</div>
 
-		<% if $canViewPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel) || $canViewPanel(SupportTicketPanel) || $canViewPanel(Plastyk\Dashboard\Panels\UsefulLinksPanel) %>
+		<% if $canViewPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel) || $canViewPanel(PlasticStudio\Panels\SupportTicketPanel) || $canViewPanel(Plastyk\Dashboard\Panels\UsefulLinksPanel) %>
 		<div class="row">
 			<div class="col-xl-4">
 				$showPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel)
 			</div>
 
 			<div class="col-xl-4">
-				$showPanel(SupportTicketPanel)
+				$showPanel(PlasticStudio\Panels\SupportTicketPanel)
 			</div>
 			
 			<div class="col-xl-4">
@@ -39,10 +39,10 @@
 		</div>
 		<% end_if %>
 
-		<% if $canViewPanel(BrokenLinksPanel) %>
+		<% if $canViewPanel(PlasticStudio\Panels\BrokenLinksPanel) %>
 			<div class="row">
 				<div class="col-12">
-					$showPanel(BrokenLinksPanel)
+					$showPanel(PlasticStudio\Panels\BrokenLinksPanel)
 				</div>
 			</div>
 		<% end_if %>

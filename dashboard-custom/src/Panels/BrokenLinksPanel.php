@@ -1,6 +1,7 @@
 <?php
 
-use SilverStripe\Dev\Debug;
+namespace PlasticStudio\Panels;
+
 use SilverStripe\ORM\ArrayList;
 use SilverStripe\View\ArrayData;
 use SilverStripe\Security\Permission;
