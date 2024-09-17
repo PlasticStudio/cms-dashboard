@@ -24,6 +24,12 @@
 				</div>
 
 				<div class="col-xl-4">
+					$showPanel(PlasticStudio\Panels\WebsiteHealthPanel)
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xl-4">
 					$showPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel)
 				</div>
 				
