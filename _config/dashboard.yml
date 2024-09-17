@@ -1,0 +1,7 @@
+---
+Name: app-dashboard
+---
+Plastyk\Dashboard\Admin\DashboardAdmin:
+  contact_email: 'email@example.com'
+  contact_name: 'Developer Name'
+  panel_accent_color: '#efbc2a'

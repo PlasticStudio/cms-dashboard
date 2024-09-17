@@ -1,0 +1,44 @@
+{
+  "name": "ps-dashboard",
+  "version": "1.1.0",
+  "author": "Emma Baker",
+  "description": "SilverStripe CMS Dashboard",
+  "repository": "https://github.com/plasticstudio/dashboard",
+  "license": "Apache-2.0",
+	"licenses": [
+		{
+			"type": "Apache-2.0",
+			"url": "http://www.apache.org/licenses/LICENSE-2.0"
+		}
+	],
+	"devDependencies": {
+		"@babel/core": "^7.16.0",
+		"@babel/preset-env": "^7.16.4",
+		"autoprefixer": "^10.4.0",
+		"babel-loader": "^8.2.3",
+		"clean-webpack-plugin": "^4.0.0",
+		"css-loader": "^6.5.1",
+		"css-minimizer-webpack-plugin": "^3.2.0",
+		"expose-loader": "^3.1.0",
+		"jquery": "^3.6.0",
+		"mini-css-extract-plugin": "^2.4.5",
+		"object-fit-images": "^3.2.4",
+		"postcss-loader": "^6.2.1",
+		"resolve-url-loader": "^4.0.0",
+		"sanitize.css": "^13.0.0",
+		"sass": "^1.44.0",
+		"sass-loader": "^12.3.0",
+		"style-loader": "^3.3.1",
+		"terser-webpack-plugin": "^5.2.5",
+    "vue": "^2.6.14",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.14",
+		"webpack": "^5.64.4",
+		"webpack-cli": "^4.9.1",
+		"webpack-remove-empty-scripts": "^0.7.1"
+	},
+	"scripts": {
+		"dev": "export NODE_ENV=dev && webpack --mode development --watch",
+		"prod": "export NODE_ENV=production && webpack --mode production"
+	}
+}

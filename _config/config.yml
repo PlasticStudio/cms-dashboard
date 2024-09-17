@@ -1,0 +1,4 @@
+# SilverStripe\Admin\LeftAndMain:
+#   extra_requirements_css:
+#     - "app/client/dist/cms.css"
+#     - "app/client/dist/dashboard.css"

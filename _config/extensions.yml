@@ -1,0 +1,3 @@
+# Plastyk\Dashboard\Admin\DashboardAdmin:
+#   extensions:
+#     - Skeletor\Extensions\DashboardAdminExtension

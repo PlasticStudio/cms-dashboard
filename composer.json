@@ -1,0 +1,31 @@
+{
+	"name": "plasticstudio/dashboard",
+    "type": "silverstripe-vendormodule",
+	"description": "CMS dashboard for SilverStripe",
+	"homepage": "https://psdigital.co.nz",
+	"keywords": ["silverstripe","dashboard"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Emma Baker",
+			"homepage": "https://psdigital.co.nz",
+			"email": "emma@psdigital.co.nz"
+		}
+	],
+	"support": {
+		"issues": "http://github.com/plasticstudio/dashboard/issues"
+	},
+    "extra": {
+        "expose": [
+            "client"
+        ]
+    },
+	"require": {
+		"silverstripe/cms": "^5",
+		"silverstripe/framework": "^5",
+        "silverstripe/vendor-plugin": "^2",
+		"plastyk/dashboard": "^3.0",
+    	"ohdearapp/ohdear-php-sdk": "^3.10"
+	},
+	"minimum-stability": "dev"
+}
