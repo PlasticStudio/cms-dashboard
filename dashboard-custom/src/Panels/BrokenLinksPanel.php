@@ -29,7 +29,7 @@ class BrokenLinksPanel extends DashboardPanel
         // https://ohdear.app/docs/integrations/the-oh-dear-php-sdk
         // Connect to Oh Dear Rest API
         $apiKey = "NSHqPBUdV3EOpqSmQr6QjoQHUgGbDI3JkFpiWCVjb94a5b47";
-        $ohDear = new OhDear\PhpSdk\OhDear($apiKey);
+        $ohDear = new OhDear($apiKey);
 
         // get all sites
         // $sites = $ohDear->sites();
