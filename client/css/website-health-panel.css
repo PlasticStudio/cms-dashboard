@@ -20,7 +20,27 @@
     display: none;
 }
 
+.result__expand-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.result__title {
+    font-size: 16px;
+    margin-bottom: 0;
+}
 
 .result__expandable {
     display: none;
+    background-color: #efefef;
+    padding: 20px;
+}
+
+.result__list {
+    padding-left: 15px;
 }

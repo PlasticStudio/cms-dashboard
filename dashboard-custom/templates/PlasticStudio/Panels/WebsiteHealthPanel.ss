@@ -14,11 +14,11 @@
                     <% if $ReviewItems %>
 
                         <div class="result__expand-trigger">
-                            <h3>$Title</h3>
+                            <h3 class="result__title">$Title</h3>
                             <span class="dashboard-icon fa fa-chevron-right" aria-hidden="true"></span>
                         </div>
                         <div class="result__expandable">                    
-                            <ul>
+                            <ul class="result__list">
                                 <% loop $ReviewItems %>
                                     <li>$Title</li>
                                 <% end_loop %>
