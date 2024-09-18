@@ -15,7 +15,7 @@ class BrokenLinksPanel extends DashboardPanel
     {
         parent::init();
         Requirements::css('plasticstudio/dashboard:client/css/broken-links-panel.css');
-        Requirements::javascript('plasticstudio/dashboard:client/js/broken-links-panel.js');
+        Requirements::javascript('plasticstudio/dashboard:client/src/js/broken-links-panel.js');
     }
 
     public function canView($member = null)
