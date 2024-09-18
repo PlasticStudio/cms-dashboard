@@ -18,5 +18,9 @@
 
 .website-health__expandable {
     display: none;
-    background: #f9f9f9;
+}
+
+
+.result__expandable {
+    display: none;
 }

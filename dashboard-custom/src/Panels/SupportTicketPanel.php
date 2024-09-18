@@ -19,7 +19,7 @@ class SupportTicketPanel extends DashboardPanel
     public function init()
     {
         parent::init();
-        Requirements::css('plastyk/dashboard:client/css/support-ticket-panel.css');
+        Requirements::css('plasticstudio/dashboard:client/css/support-ticket-panel.css');
     }
 
     public function getData()

@@ -7,5 +7,12 @@
 				$('.cms-content.DashboardAdmin .website-health__expandable').slideToggle();
 			}
 		});
+		
+        $('.cms-content.DashboardAdmin .website-health .result__expand-trigger').entwine({
+			onclick: function () {
+				$('.cms-content.DashboardAdmin .website-health .result__expand-trigger').toggleClass('open');
+				$('.cms-content.DashboardAdmin .website-health .result__expandable').slideToggle();
+			}
+		});
 	});
 })(jQuery);
