@@ -7,9 +7,8 @@ use SilverStripe\View\Requirements;
 
 class DashboardAdminExtension extends Extension
 {
-    public function init()
+    public function updateInit()
     {
-        parent::init();
         Requirements::css('plasticstudio/dashboard:client/dist/index.css');
         Requirements::css('plasticstudio/dashboard:client/dist/index.js');
     }
