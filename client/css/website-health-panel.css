@@ -14,7 +14,7 @@
 
 .website-health__title {
     font-size: 20px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .website-health__expandable {
@@ -36,6 +36,10 @@
     margin-bottom: 0;
 }
 
+.cms-content.DashboardAdmin .dashboard-panel.website-health h3 a {
+    color: #0071c4;
+}
+
 /* .result__expandable {
     display: none;
     background-color: #efefef;
@@ -54,6 +58,7 @@
 
 .result__list {
     padding-left: 15px;
+    margin-bottom: 0;
 }
 
 .result__list li {

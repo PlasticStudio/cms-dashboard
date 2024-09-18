@@ -23,7 +23,7 @@
 					$showPanel(PlasticStudio\Panels\SupportTicketPanel)
 				</div>
 
-				<div class="col-xl-4">
+				<div class="col-xl-8">
 					$showPanel(PlasticStudio\Panels\WebsiteHealthPanel)
 				</div>
 			</div>

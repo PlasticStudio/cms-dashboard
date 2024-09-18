@@ -30,8 +30,13 @@ class WebsiteHealthPanel extends DashboardPanel
         $data = parent::getData();
 
         $data['Results'] = $this->getResults();
+        $data['Content'] = $this->getContent();
 
         return $data;
+    }
+
+    public function getContent() {
+        return '<p>See an overview of things that need attention.</p>';
     }
 
     public function getResults()

@@ -5,6 +5,12 @@
         <span class="dashboard-icon fa fa-chevron-right" aria-hidden="true"></span>
     </div>
 
+    <% if $Content %>
+        <div class="website-health__content">
+            $Content
+        </div>
+    <% end_if %>
+
     <div class="website-health__expandable">
 
         <% if $Results %>

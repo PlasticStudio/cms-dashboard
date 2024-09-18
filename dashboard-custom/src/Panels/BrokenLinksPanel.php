@@ -7,6 +7,7 @@ use SilverStripe\ORM\ArrayList;
 use SilverStripe\View\ArrayData;
 use SilverStripe\Security\Permission;
 use Plastyk\Dashboard\Model\DashboardPanel;
+use Plastyk\Dashboard\Admin\DashboardAdmin;
 use SilverStripe\View\Requirements;
 
 class BrokenLinksPanel extends DashboardPanel
@@ -36,17 +37,10 @@ class BrokenLinksPanel extends DashboardPanel
     {
         // https://ohdear.app/docs/integrations/the-oh-dear-php-sdk
         // Connect to Oh Dear Rest API
-        $apiKey = "NSHqPBUdV3EOpqSmQr6QjoQHUgGbDI3JkFpiWCVjb94a5b47";
+        $apiKey = DashboardAdmin::config()->ohdear_api_key ?: false;
         $ohDear = new OhDear($apiKey);
-
-        // get all sites
-        // $sites = $ohDear->sites();
-
-        $siteID = '40394';
-
+        $siteID = DashboardAdmin::config()->ohdear_site_id ?: false;
         $brokenLinks = $ohDear->site($siteID)->brokenLinks();
-
-        // Debug::show($brokenLinks);
         $results = ArrayList::create();
 
         foreach ($brokenLinks as $link) {
