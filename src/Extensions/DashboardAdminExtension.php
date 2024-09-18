@@ -11,6 +11,7 @@ class DashboardAdminExtension extends Extension
     {
         // parent::init();
         Requirements::javascript('client/dist/index.js');
+        Requirements::css('client/dist/index.css');
     }
 
 }
