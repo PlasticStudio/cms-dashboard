@@ -7,7 +7,7 @@
         </button>
     </div>
 
-    <div class="dashboard-panel__body">
+    <div class="dashboard-panel__expandable">
 
         <% if $Results %>
             <table class="table">
