@@ -19,7 +19,7 @@ class SupportTicketPanel extends DashboardPanel
         $allowed_panels = DashboardAdmin::config()->allowed_panels;
         $allowed = false;
 
-        if ($allowed_panels && in_array(ClassInfo::ClassName(), $allowed_panels)) {
+        if ($allowed_panels && in_array(ClassInfo::class_name($this->ClassName), $allowed_panels)) {
             $allowed = true;
         }
 

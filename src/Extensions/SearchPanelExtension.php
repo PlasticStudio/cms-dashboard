@@ -16,7 +16,7 @@ class SearchPanelExtension extends Extension
         $allowed_panels = DashboardAdmin::config()->allowed_panels;
         $allowed = false;
 
-        if ($allowed_panels && in_array(ClassInfo::ClassName($this->owner), $allowed_panels)) {
+        if ($allowed_panels && in_array(ClassInfo::class_name($this->owner->ClassName), $allowed_panels)) {
             $allowed = true;
         }
 
