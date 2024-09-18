@@ -18,7 +18,7 @@ class WebsiteHealthPanel extends DashboardPanel
     {
         parent::init();
         Requirements::css('plasticstudio/dashboard:client/css/website-health-panel.css');
-        Requirements::css('plasticstudio/dashboard:client/js/website-health-panel.js');
+        Requirements::javascript('plasticstudio/dashboard:client/js/website-health-panel.js');
     }
     
     public function canView($member = null)
