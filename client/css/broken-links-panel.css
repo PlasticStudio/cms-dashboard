@@ -1,3 +1,17 @@
+.dashboard-panel__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 2px solid red;
+
+    &.open {
+        .dashboard-panel__toggle-button {
+            transform: rotate(180deg);
+        }
+    }
+}
+
 .dashboard-panel__expandable {
     display: none;
 }
