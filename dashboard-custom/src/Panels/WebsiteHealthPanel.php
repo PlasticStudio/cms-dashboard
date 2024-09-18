@@ -28,9 +28,7 @@ class WebsiteHealthPanel extends DashboardPanel
     public function getResults()
     {
         $pages = Page::get();
-
         $results = ArrayList::create();
-
 
         // Settings
         $siteConfig = SiteConfig::current_site_config();
@@ -68,7 +66,6 @@ class WebsiteHealthPanel extends DashboardPanel
         }
 
         // Pages
-
         $classExclusions = [
             'SilverStripe\CMS\Model\VirtualPage',
             'SilverStripe\CMS\Model\RedirectorPage',

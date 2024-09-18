@@ -13,7 +13,7 @@ const output_dir = __dirname + "/dist";
 
 module.exports = {
   entry: {
-    index: __dirname + "/src/js/index.js",
+    index: __dirname + "/js/index.js",
   },
   output: {
     path: output_dir,
