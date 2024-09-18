@@ -2,7 +2,7 @@
 
 namespace PlasticStudio\Panels;
 
-use SilverStripe\CMS\Model\SiteTree;
+use Page;
 use SilverStripe\Security\Permission;
 use Plastyk\Dashboard\Model\DashboardPanel;
 use SilverStripe\ORM\ArrayList;
