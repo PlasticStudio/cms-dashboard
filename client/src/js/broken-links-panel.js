@@ -3,10 +3,10 @@
 
 		console.log('broken-links-panel.js');
 
-		$('.cms-content.DashboardAdmin .dashboard-panel__broken-links .dashboard-panel__expandable-toggle').entwine({
+		$('.cms-content.DashboardAdmin .broken-links__expandable-toggle').entwine({
 			onclick: function () {
-				$('.cms-content.DashboardAdmin .dashboard-panel__broken-links .dashboard-panel__expandable-toggle').toggleClass('open');
-				$('.cms-content.DashboardAdmin .dashboard-panel__broken-links .dashboard-panel__expandable').slideToggle();
+				$('.cms-content.DashboardAdmin .broken-links__expandable-toggle').toggleClass('open');
+				$('.cms-content.DashboardAdmin .broken-links__expandable').slideToggle();
 			}
 		});
 	});

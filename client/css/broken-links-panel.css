@@ -1,4 +1,4 @@
-.dashboard-panel__broken-links .dashboard-panel__expandable-toggle {
+.broken-links__expandable-toggle {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,11 +6,11 @@
     border: 2px solid red;
 }
 
-.dashboard-panel__broken-links .dashboard-panel__expandable-toggle.open .dashboard-panel__toggle-button {
+.broken-links__expandable-toggle.open .dashboard-panel__toggle-button {
     transform: rotate(180deg);        
 }
 
-.dashboard-panel__broken-links .dashboard-panel__expandable {
+.broken-links__expandable {
     display: none;
 }
 
