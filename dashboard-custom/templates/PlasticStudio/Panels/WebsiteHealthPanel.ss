@@ -14,7 +14,7 @@
                 <% if $ReviewItems %>
                     <div class="result">
 
-                    <h3 class="result__title">$Title</h3>
+                    <h3 class="result__title"><a href="$CMSEditLink">$Title</a></h3>
                                     
                     <ul class="result__list">
                         <% loop $ReviewItems %>
