@@ -7,6 +7,7 @@ use SilverStripe\ORM\ArrayList;
 use SilverStripe\View\ArrayData;
 use SilverStripe\Security\Permission;
 use Plastyk\Dashboard\Model\DashboardPanel;
+use SilverStripe\View\Requirements;
 
 class BrokenLinksPanel extends DashboardPanel
 {
