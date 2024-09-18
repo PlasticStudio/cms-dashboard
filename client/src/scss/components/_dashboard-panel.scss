@@ -2,12 +2,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &.open {
+        .dashboard-panel__toggle-button {
+            transform: rotate(180deg);
+        }
+    }
 }
 
 .dashboard-panel__toggle-button {
     border: 0;
 }
 
-.dashboard-panel__expandable {
+.dashboard-panel__body {
     display: none;
 }
