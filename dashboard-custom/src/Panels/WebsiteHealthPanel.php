@@ -9,14 +9,22 @@ use SilverStripe\ORM\ArrayList;
 use SilverStripe\View\ArrayData;
 use SilverStripe\Core\ClassInfo;
 use SilverStripe\SiteConfig\SiteConfig;
+use SilverStripe\View\Requirements;
 
 class WebsiteHealthPanel extends DashboardPanel
 {
+
+    public function init()
+    {
+        parent::init();
+        Requirements::css('plastyk/dashboard:client/css/website-health-panel.css');
+        Requirements::css('plastyk/dashboard:client/js/website-health-panel.css');
+    }
+    
     public function canView($member = null)
     {
         return Permission::checkMember($member, 'CMS_ACCESS_ADMIN');
     }
-
     public function getData()
     {
         $data = parent::getData();

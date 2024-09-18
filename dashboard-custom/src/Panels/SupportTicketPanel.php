@@ -16,11 +16,11 @@ class SupportTicketPanel extends DashboardPanel
         return Permission::checkMember($member, 'CMS_ACCESS_ADMIN');
     }
 
-    // public function init()
-    // {
-    //     parent::init();
-    //     Requirements::css('plastyk/dashboard:css/dashboard-more-information-panel.css');
-    // }
+    public function init()
+    {
+        parent::init();
+        Requirements::css('plastyk/dashboard:client/css/support-ticket-panel.css');
+    }
 
     public function getData()
     {

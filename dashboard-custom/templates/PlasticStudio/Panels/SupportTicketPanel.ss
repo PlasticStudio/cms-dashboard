@@ -1,4 +1,4 @@
-<div class="dashboard-panel dashboard-panel__support">
-	<h2>How can we help you today?</h2>
+<div class="dashboard-panel support-ticket">
+	<h2 class="support-ticket__title">How can we help you today?</h2>
 	$Content
 </div>

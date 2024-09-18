@@ -1,30 +1,38 @@
-<div class="dashboard-panel dashboard-panel__website-health">
-    <h2>Website Health</h2>
+<div class="dashboard-panel website-health">
 
-    <% if $Results %>
+    <div class="website-health__expandable-toggle">
+        <h2 class="website-health__title">Website Health</h2>
+        <span class="dashboard-icon fa fa-chevron-right" aria-hidden="true"></span>
+    </div>
 
-        <% loop $Results %>
-            <div class="result">
-                <% if $ReviewItems %>
+    <div class="website-health__expandable">
 
-                    <div class="dashboard-panel__toggle-wrapper">
-                        <h3>$Title</h3>
-                        <button class="dashboard-panel__toggle-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 20l-11.245-14.374-11.219 14.374-.781-.619 12-15.381 12 15.391-.755.609z"/></svg>
-                        </button>
-                    </div>
-                    <div class="dashboard-panel__expandable">                    
-                        <ul>
-                            <% loop $ReviewItems %>
-                                <li>$Title</li>
-                            <% end_loop %>
-                        </ul>
-                        <a href="$CMSEditLink">Edit page</a>
-                    </div>
-                <% end_if %>
-            </div>
-        <% end_loop %>
+        <% if $Results %>
 
-    <% end_if %>
+            <% loop $Results %>
+                <div class="result">
+                    <% if $ReviewItems %>
+
+                        <div class="dashboard-panel__toggle-wrapper">
+                            <h3>$Title</h3>
+                            <button class="dashboard-panel__toggle-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 20l-11.245-14.374-11.219 14.374-.781-.619 12-15.381 12 15.391-.755.609z"/></svg>
+                            </button>
+                        </div>
+                        <div class="dashboard-panel__expandable">                    
+                            <ul>
+                                <% loop $ReviewItems %>
+                                    <li>$Title</li>
+                                <% end_loop %>
+                            </ul>
+                            <a href="$CMSEditLink">Edit page</a>
+                        </div>
+                    <% end_if %>
+                </div>
+            <% end_loop %>
+
+        <% end_if %>
+        
+    </div>
 
 </div>
