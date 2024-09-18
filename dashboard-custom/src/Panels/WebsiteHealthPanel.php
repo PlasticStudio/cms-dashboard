@@ -65,16 +65,15 @@ class WebsiteHealthPanel extends DashboardPanel
                 ]));
             }
 
-            // if is draft page and was created more than 2 minutes ago
-            if ($page->isPublished() == false && strtotime($page->Created) < strtotime('-2 minutes')) {
-                $reviewItems->push(ArrayData::create([
-                    'Title' => 'New page was created but hasn\'t been published.',
-                ]));
-            }
-
+            // pages created but not editing not completed
             if ($page->Created == $page->LastEdited) {
                 $reviewItems->push(ArrayData::create([
                     'Title' => 'Page created but not edited.'
+                ]));
+            } else if ($page->isPublished() == false && strtotime($page->Created) < strtotime('-2 minutes')) {
+                // if is draft page and was created more than 2 minutes ago
+                $reviewItems->push(ArrayData::create([
+                    'Title' => 'New page was created but hasn\'t been published.',
                 ]));
             }
             
