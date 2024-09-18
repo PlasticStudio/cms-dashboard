@@ -8,6 +8,7 @@ use Plastyk\Dashboard\Model\DashboardPanel;
 use SilverStripe\ORM\ArrayList;
 use SilverStripe\View\ArrayData;
 use SilverStripe\Core\ClassInfo;
+use SilverStripe\SiteConfig\SiteConfig;
 
 class WebsiteHealthPanel extends DashboardPanel
 {
