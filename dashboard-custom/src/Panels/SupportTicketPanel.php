@@ -50,8 +50,8 @@ class SupportTicketPanel extends DashboardPanel
         $contactEmail = DashboardAdmin::config()->contact_email ?: false;
         $siteName = SiteConfig::current_site_config()->Title;
 
-        $content = '<p><a href="mailto:' . $contactEmail . '?subject=New support request from ' . $siteName . '" target="_blank">Contact us</a> if you would like any submit a support ticket or would like any assistance.</p>';
-
+        $content = '<p>Contact us if you would like any submit a support ticket or would like any assistance.</p>';
+        $content .= '<p><a href="mailto:' . $contactEmail . '?subject=New support request from ' . $siteName . '" target="_blank" class="btn btn-primary">Request support</a></p>';
         return DBField::create_field('HTMLText', $content);
     }
 

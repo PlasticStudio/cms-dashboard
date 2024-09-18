@@ -14,10 +14,12 @@
 
 .website-health__title {
     font-size: 20px;
+    margin-bottom: 0;
 }
 
 .website-health__expandable {
     display: none;
+    padding-top: 25px;
 }
 
 .result__expand-trigger {
@@ -25,12 +27,11 @@
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid gray;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
-.result__title {
+.cms-content.DashboardAdmin .dashboard-panel h3.result__title {
     font-size: 16px;
     margin-bottom: 0;
 }
@@ -39,6 +40,7 @@
     display: none;
     background-color: #efefef;
     padding: 20px;
+    transition: all 0.5s;
 }
 
 .result__expandable.open {
