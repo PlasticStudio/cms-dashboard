@@ -11,6 +11,7 @@ class DashboardAdminExtension extends Extension
     {
         Requirements::css('plasticstudio/dashboard:client/dist/index.css');
         Requirements::css('plasticstudio/dashboard:client/dist/index.js');
+        Requirements::set_force_js_to_bottom(true);
     }
 
 }

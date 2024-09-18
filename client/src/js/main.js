@@ -23,11 +23,11 @@ function init() {
         // ...mapFields([]),
         // ...mapGetters([]),
       },
-    //   data() {
-    //     return {
-    //       tabMenuWidth:  0
-    //     };
-    //   },
+      data() {
+        return {
+          expandedPanel: '',
+        };
+      },
       mounted() {
         console.log("Dashboard app mounted...");
         // var totalWidth = 0;
@@ -57,6 +57,13 @@ function init() {
         // },
       },
       methods: {
+        toggleExpandablePanel(panel) {
+          if (this.expandedPanel === panel) {
+            this.expandedPanel = '';
+          } else {
+            this.expandedPanel = panel;
+          }
+        }
     //     changeTab(tabId) {
     //       this.openTab = tabId;
     //       this.openAccordion = 1;

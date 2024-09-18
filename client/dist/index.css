@@ -1,1 +1,31 @@
-.broken-link__code{border-radius:10px;color:#fff;padding:2px 8px}.broken-link__code--code-404{background-color:#ff7300}.broken-link__code--code-500{background-color:#dd0101}
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-3.use[5]!./src/scss/index.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+.dashboard-panel__toggle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-panel__toggle-button {
+  border: 0;
+}
+
+.dashboard-panel__expandable {
+  height: 0;
+  overflow: hidden;
+}
+
+.broken-link__code {
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+.broken-link__code--code-404 {
+  background-color: rgb(255, 115, 0);
+}
+.broken-link__code--code-500 {
+  background-color: rgb(221, 1, 1);
+}
+
+/*# sourceMappingURL=index.css.map*/

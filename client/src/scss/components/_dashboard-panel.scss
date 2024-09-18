@@ -1,0 +1,15 @@
+.dashboard-panel__toggle-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-panel__toggle-button {
+    
+    border: 0;
+}
+
+.dashboard-panel__expandable {
+    height: 0;
+    overflow: hidden;
+}
