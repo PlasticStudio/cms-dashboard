@@ -1,9 +1,9 @@
 (function ($) {
 	$.entwine('ss', function ($) {
 
-		$('.cms-content.DashboardAdmin .dashboard-panel__panel-head').entwine({
+		$('.cms-content.DashboardAdmin .dashboard-panel__head').entwine({
 			onclick: function () {
-				$('.cms-content.DashboardAdmin .dashboard-panel__panel-head').toggleClass('open');
+				$('.cms-content.DashboardAdmin .dashboard-panel__head').toggleClass('open');
 				$('.cms-content.DashboardAdmin .dashboard-panel__expandable').slideToggle();
 			}
 		});
