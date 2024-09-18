@@ -1,3 +1,22 @@
+.website-health__expandable-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.website-health__expandable-toggle.open .dashboard-icon {
+    transform: rotate(90deg);
+}
+
+.website-health .dashboard-icon {
+    font-size: 20px;
+}
+
 .website-health__title {
     font-size: 20px;
+}
+
+.website-health__expandable {
+    display: none;
+    background: #f9f9f9;
 }
