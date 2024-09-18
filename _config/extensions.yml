@@ -1,6 +1,6 @@
 Plastyk\Dashboard\Admin\DashboardAdmin:
   extensions:
-    - Skeletor\Extensions\DashboardAdminExtension
+    - PlasticStudio\Extensions\DashboardAdminExtension
 Plastyk\Dashboard\Panels\QuickLinksPanel:
   extensions:
     - PlasticStudio\Extensions\QuickLinksPanelExtension

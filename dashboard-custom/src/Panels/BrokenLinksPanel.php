@@ -21,7 +21,21 @@ class BrokenLinksPanel extends DashboardPanel
 
     public function canView($member = null)
     {
-        return Permission::checkMember($member, 'CMS_ACCESS_ADMIN');
+        $permission = Permission::checkMember($member, 'CMS_ACCESS_ADMIN');
+
+        $allowed_panels = DashboardAdmin::config()->allowed_panels;
+        $allowed = false;
+
+        if ($allowed_panels && !in_array('PlasticStudio\Panels\BrokenLinksPanel', $allowed_panels)) {
+            $allowed = true;
+        }
+
+        if ($permission && $allowed) {
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
     public function getData()
