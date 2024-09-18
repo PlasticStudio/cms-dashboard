@@ -31,6 +31,44 @@ class WebsiteHealthPanel extends DashboardPanel
 
         $results = ArrayList::create();
 
+
+        // Settings
+        $siteConfig = SiteConfig::current_site_config();
+        $siteConfigEditLink = '/admin/settings';
+        $settingsItems = ArrayList::create();
+
+        if ($siteConfig->Title == 'Your Site Name') {
+            $settingsItems->push(ArrayData::create([
+                'Title' => 'Site Title needs updating.',
+            ]));
+        }
+
+        if ($siteConfig->EmailRecipients == '') {
+            $settingsItems->push(ArrayData::create([
+                'Title' => 'Email Recipients are missing.',
+            ]));
+        }
+
+        if (!$siteConfig->Logo) {
+            $settingsItems->push(ArrayData::create([
+                'Title' => 'Site Logo is missing.',
+            ]));
+        }
+
+        if ($settingsItems->count() > 0) {
+            $data = ArrayData::create(
+                [
+                    'Title' => 'Settings',
+                    'CMSEditLink' => $siteConfigEditLink,
+                    'ReviewItems' => $settingsItems,
+                ]
+            );
+
+            $results->push($data);
+        }
+
+        // Pages
+
         $classExclusions = [
             'SilverStripe\CMS\Model\VirtualPage',
             'SilverStripe\CMS\Model\RedirectorPage',
@@ -94,7 +132,7 @@ class WebsiteHealthPanel extends DashboardPanel
         return $results;
     }
 
-    function convertToNewSlug($string) {
+    private function convertToNewSlug($string) {
         // Step 1: Insert hyphen before each uppercase letter (except the first one)
         $slug = preg_replace('/([a-z])([A-Z])/', '$1-$2', $string);
         
