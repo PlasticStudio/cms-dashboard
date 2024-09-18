@@ -9,9 +9,9 @@ class DashboardAdminExtension extends Extension
 {
     public function init()
     {
-        // parent::init();
-        Requirements::javascript('client/dist/index.js');
-        Requirements::css('client/dist/index.css');
+        parent::init();
+        Requirements::css('plasticstudio/dashboard:client/dist/index.css');
+        Requirements::css('plasticstudio/dashboard:client/dist/index.js');
     }
 
 }
