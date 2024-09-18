@@ -1,21 +1,13 @@
-.dashboard-panel__toggle-wrapper {
+.dashboard-panel__head {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    border: 2px solid red;
 }
 
 .dashboard-panel__toggle-button {
-    
     border: 0;
 }
 
 .dashboard-panel__expandable {
-    height: 0;
-    overflow: hidden;
-
-    &--open {
-        height: auto;
-    }
+    display: none;
 }

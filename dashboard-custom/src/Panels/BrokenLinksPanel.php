@@ -10,6 +10,13 @@ use Plastyk\Dashboard\Model\DashboardPanel;
 
 class BrokenLinksPanel extends DashboardPanel
 {
+    // public function init()
+    // {
+    //     parent::init();
+    //     Requirements::css('plasticstudio/dashboard:css/broken-links-panel.css');
+    //     Requirements::javascript('plasticstudio/dashboard:javascript/broken-links-panel.js');
+    // }
+
     public function canView($member = null)
     {
         return Permission::checkMember($member, 'CMS_ACCESS_ADMIN');

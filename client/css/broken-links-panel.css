@@ -1,0 +1,17 @@
+.dashboard-panel__expandable {
+    display: none;
+}
+
+.broken-link__code {
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.broken-link__code--code-404 {
+    background-color: rgb(255, 115, 0);
+}
+
+.broken-link__code--code-500 {
+    background-color: rgb(221, 1, 1);
+}

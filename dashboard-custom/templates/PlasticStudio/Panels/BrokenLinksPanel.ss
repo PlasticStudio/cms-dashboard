@@ -1,13 +1,13 @@
 <div class="dashboard-panel dashboard-panel__broken-links">
     
-    <div class="dashboard-panel__toggle-wrapper">
+    <div class="dashboard-panel__head">
         <h2>Broken Links</h2>
         <button class="dashboard-panel__toggle-button" @click="toggleExpandablePanel('broken-links')">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 20l-11.245-14.374-11.219 14.374-.781-.619 12-15.381 12 15.391-.755.609z"/></svg>
         </button>
     </div>
 
-    <div class="dashboard-panel__expandable" :class={'dashboard-panel__expanable--open': expandablePanelIsOpen('broken-links') } data-name="broken-links">
+    <div class="dashboard-panel__body">
 
         <% if $Results %>
             <table class="table">
