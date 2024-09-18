@@ -6,8 +6,12 @@
     border: 2px solid red;
 }
 
-.broken-links__expandable-toggle.open .dashboard-panel__toggle-button {
-    transform: rotate(180deg);        
+.broken-links__expandable-toggle.open .dashboard-panel__toggle-button {   
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .broken-links__expandable {
