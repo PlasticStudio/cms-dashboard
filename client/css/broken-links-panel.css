@@ -14,10 +14,12 @@
 
 .broken-links__title {
     font-size: 20px;
+    margin-bottom: 0;
 }
 
 .broken-links__expandable {
     display: none;
+    padding-top: 25px;
 }
 
 .broken-link__code {

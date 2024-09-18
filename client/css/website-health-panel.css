@@ -36,16 +36,21 @@
     margin-bottom: 0;
 }
 
-.result__expandable {
+/* .result__expandable {
     display: none;
     background-color: #efefef;
     padding: 20px;
     transition: all 0.5s;
+} */
+
+.result {
+    border-top: 1px solid #dbe0e9;
+    padding: 8px;
 }
 
-.result__expandable.open {
+/* .result__expandable.open {
     display: block;
-}
+} */
 
 .result__list {
     padding-left: 15px;

@@ -13,7 +13,18 @@
                 <div class="result">
                     <% if $ReviewItems %>
 
-                        <div class="result__expand-trigger">
+                        <h3 class="result__title">$Title</h3>
+                        <span class="dashboard-icon fa fa-chevron-right" aria-hidden="true"></span>
+                                        
+                        <ul class="result__list">
+                            <% loop $ReviewItems %>
+                                <li>$Title</li>
+                            <% end_loop %>
+                        </ul>
+                        <a href="$CMSEditLink">Edit page</a>
+                    
+
+                        <%-- <div class="result__expand-trigger">
                             <h3 class="result__title">$Title</h3>
                             <span class="dashboard-icon fa fa-chevron-right" aria-hidden="true"></span>
                         </div>
@@ -24,7 +35,7 @@
                                 <% end_loop %>
                             </ul>
                             <a href="$CMSEditLink">Edit page</a>
-                        </div>
+                        </div> --%>
                     <% end_if %>
                 </div>
             <% end_loop %>

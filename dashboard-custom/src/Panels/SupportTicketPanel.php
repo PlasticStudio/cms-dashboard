@@ -52,6 +52,7 @@ class SupportTicketPanel extends DashboardPanel
 
         $content = '<p>Contact us if you would like any submit a support ticket or would like any assistance.</p>';
         $content .= '<p><a href="mailto:' . $contactEmail . '?subject=New support request from ' . $siteName . '" target="_blank" class="btn btn-primary">Request support</a></p>';
+        
         return DBField::create_field('HTMLText', $content);
     }
 
