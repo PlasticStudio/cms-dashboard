@@ -8,12 +8,26 @@ use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\Security\Permission;
 use SilverStripe\SiteConfig\SiteConfig;
 use SilverStripe\View\Requirements;
+use SilverStripe\Core\ClassInfo;
 
 class SupportTicketPanel extends DashboardPanel
 {
     public function canView($member = null)
     {
-        return Permission::checkMember($member, 'CMS_ACCESS_ADMIN');
+        $permission = Permission::checkMember($member, 'CMS_ACCESS_ADMIN');
+
+        $allowed_panels = DashboardAdmin::config()->allowed_panels;
+        $allowed = false;
+
+        if ($allowed_panels && in_array(ClassInfo::ClassName(), $allowed_panels)) {
+            $allowed = true;
+        }
+
+        if ($permission && $allowed) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public function init()

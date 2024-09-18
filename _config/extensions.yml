@@ -4,3 +4,6 @@ Plastyk\Dashboard\Admin\DashboardAdmin:
 Plastyk\Dashboard\Panels\QuickLinksPanel:
   extensions:
     - PlasticStudio\Extensions\QuickLinksPanelExtension
+Plastyk\Dashboard\Panels\SearchPanel:
+  extensions:
+    - PlasticStudio\Extensions\SearchPanelExtension

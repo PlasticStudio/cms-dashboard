@@ -36,7 +36,6 @@ class BrokenLinksPanel extends DashboardPanel
         } else {
             return false;
         }
-
     }
 
     public function getData()

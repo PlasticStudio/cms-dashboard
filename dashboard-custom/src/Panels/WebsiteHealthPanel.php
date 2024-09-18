@@ -5,6 +5,7 @@ namespace PlasticStudio\Panels;
 use Page;
 use SilverStripe\Security\Permission;
 use Plastyk\Dashboard\Model\DashboardPanel;
+use Plastyk\Dashboard\Admin\DashboardAdmin;
 use SilverStripe\ORM\ArrayList;
 use SilverStripe\View\ArrayData;
 use SilverStripe\Core\ClassInfo;
@@ -24,8 +25,22 @@ class WebsiteHealthPanel extends DashboardPanel
     
     public function canView($member = null)
     {
-        return Permission::checkMember($member, 'CMS_ACCESS_ADMIN');
+        $permission = Permission::checkMember($member, 'CMS_ACCESS_ADMIN');
+
+        $allowed_panels = DashboardAdmin::config()->allowed_panels;
+        $allowed = false;
+
+        if ($allowed_panels && in_array(ClassInfo::ClassName(), $allowed_panels)) {
+            $allowed = true;
+        }
+
+        if ($permission && $allowed) {
+            return true;
+        } else {
+            return false;
+        }
     }
+
     public function getData()
     {
         $data = parent::getData();
