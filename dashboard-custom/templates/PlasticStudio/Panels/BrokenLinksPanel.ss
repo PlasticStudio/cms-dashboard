@@ -7,7 +7,7 @@
         </button>
     </div>
 
-    <div class="dashboard-panel__expandable" :class={"dashboard-panel__expanable--open": expandedPanel = 'broken-links'} data-name="broken-links">
+    <div class="dashboard-panel__expandable" :class={'dashboard-panel__expanable--open': expandablePanelIsOpen('broken-links') } data-name="broken-links">
 
         <% if $Results %>
             <table class="table">
