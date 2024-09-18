@@ -13,7 +13,7 @@ const output_dir = __dirname + "/dist";
 
 module.exports = {
   entry: {
-    index: __dirname + "/js/index.js",
+    index: __dirname + "/src/js/index.js",
   },
   output: {
     path: output_dir,
@@ -83,12 +83,6 @@ module.exports = {
             loader: "sass-loader",
             options: {
               sourceMap: true,
-              additionalData: `
-              @import "@/scss/global/_variables.scss";
-              @import "@/scss/global/_helpers.scss";
-              @import "@/scss/global/_mixins.scss";
-              @import "@/scss/global/_typography.scss";
-              `,
             },
           },
         ],

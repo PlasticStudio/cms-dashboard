@@ -17,6 +17,7 @@
 		"autoprefixer": "^10.4.0",
 		"babel-loader": "^8.2.3",
 		"clean-webpack-plugin": "^4.0.0",
+		"core-js": "^3.25.0",
 		"css-loader": "^6.5.1",
 		"css-minimizer-webpack-plugin": "^3.2.0",
 		"expose-loader": "^3.1.0",
@@ -30,12 +31,16 @@
 		"sass-loader": "^12.3.0",
 		"style-loader": "^3.3.1",
 		"terser-webpack-plugin": "^5.2.5",
-    "vue": "^2.6.14",
-    "vue-loader": "^15.9.8",
-    "vue-template-compiler": "^2.6.14",
+		"vue": "^2.6.14",
+		"vue-loader": "^15.9.8",
+		"vue-template-compiler": "^2.6.14",
+		"vuex": "^3.6.2",
 		"webpack": "^5.64.4",
 		"webpack-cli": "^4.9.1",
 		"webpack-remove-empty-scripts": "^0.7.1"
+	},
+	"dependencies": {
+		"vuex-map-fields": "^1.4.1"
 	},
 	"scripts": {
 		"dev": "export NODE_ENV=dev && webpack --mode development --watch",
