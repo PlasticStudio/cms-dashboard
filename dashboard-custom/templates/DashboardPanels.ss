@@ -22,10 +22,6 @@
 				<div class="col-xl-4">
 					$showPanel(PlasticStudio\Panels\SupportTicketPanel)
 				</div>
-
-				<div class="col-xl-4">
-					$showPanel(PlasticStudio\Panels\WebsiteHealthPanel)
-				</div>
 			</div>
 			
 			<div class="row">
@@ -35,6 +31,10 @@
 				
 				<div class="col-xl-4">
 					$showPanel(Plastyk\Dashboard\Panels\UsefulLinksPanel)
+				</div>
+
+				<div class="col-xl-4">
+					$showPanel(PlasticStudio\Panels\WebsiteHealthPanel)
 				</div>
 			</div>
 		<% end_if %>
@@ -47,11 +47,11 @@
 			</div>
 		<% end_if %>
 
-		<div class="row">
+		<%-- <div class="row">
 			<div class="col-12">
 				$showPanel(Plastyk\Dashboard\Panels\MoreInformationPanel)
 			</div>
-		</div>
+		</div> --%>
 	</div>
 
 </div>
