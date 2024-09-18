@@ -41,6 +41,10 @@
     padding: 20px;
 }
 
+.result__expandable.open {
+    display: block;
+}
+
 .result__list {
     padding-left: 15px;
 }
