@@ -14,7 +14,7 @@
         </a>
     <% end_if %>
 
-    <% if $CanViewProperties %>
+    <%-- <% if $CanViewProperties %> --%>
         <a href="{$AdminURL}/properties/">
             <span class="dashboard-icon fa fa-building" aria-hidden="true"></span>
             Properties
@@ -24,7 +24,7 @@
             <span class="dashboard-icon fa fa-plus" aria-hidden="true"></span>
             New Property
         </a>
-    <% end_if %>
+    <%-- <% end_if %> --%>
 
     <% if $CanViewSettings %>
         <a href="{$AdminURL}/settings/">

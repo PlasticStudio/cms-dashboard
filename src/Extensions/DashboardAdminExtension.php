@@ -9,6 +9,6 @@ class DashboardAdminExtension extends Extension
 {
     public function updateInit()
     {
-        Requirements::css('plasticstudio/dashboard:css/dashboard-panels.css');
+        Requirements::css('plasticstudio/dashboard:client/css/dashboard-panels.css');
     }
 }

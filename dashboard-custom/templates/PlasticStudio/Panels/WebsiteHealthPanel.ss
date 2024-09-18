@@ -20,7 +20,7 @@
                 <% if $ReviewItems %>
                     <div class="result">
 
-                    <h3 class="result__title"><a href="$CMSEditLink">$Title</a></h3>
+                    <p class="result__title"><a href="$CMSEditLink">$Title</a></p>
                                     
                     <ul class="result__list">
                         <% loop $ReviewItems %>
