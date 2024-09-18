@@ -3,5 +3,3 @@ Name: plasticstudio-dashboard
 ---
 Plastyk\Dashboard\Admin\DashboardAdmin:
   panel_accent_color: '#14e885'
-  model_admin_classes:
-    - ProductAdmin
