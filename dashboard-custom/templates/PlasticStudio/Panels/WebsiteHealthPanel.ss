@@ -10,34 +10,34 @@
         <% if $Results %>
 
             <% loop $Results %>
-                <div class="result">
-                    <% if $ReviewItems %>
+                
+                <% if $ReviewItems %>
+                    <div class="result">
 
+                    <h3 class="result__title">$Title</h3>
+                                    
+                    <ul class="result__list">
+                        <% loop $ReviewItems %>
+                            <li>$Title</li>
+                        <% end_loop %>
+                    </ul>
+                
+
+                    <%-- <div class="result__expand-trigger">
                         <h3 class="result__title">$Title</h3>
                         <span class="dashboard-icon fa fa-chevron-right" aria-hidden="true"></span>
-                                        
+                    </div>
+                    <div class="result__expandable">                    
                         <ul class="result__list">
                             <% loop $ReviewItems %>
                                 <li>$Title</li>
                             <% end_loop %>
                         </ul>
                         <a href="$CMSEditLink">Edit page</a>
-                    
-
-                        <%-- <div class="result__expand-trigger">
-                            <h3 class="result__title">$Title</h3>
-                            <span class="dashboard-icon fa fa-chevron-right" aria-hidden="true"></span>
-                        </div>
-                        <div class="result__expandable">                    
-                            <ul class="result__list">
-                                <% loop $ReviewItems %>
-                                    <li>$Title</li>
-                                <% end_loop %>
-                            </ul>
-                            <a href="$CMSEditLink">Edit page</a>
-                        </div> --%>
-                    <% end_if %>
-                </div>
+                    </div> --%>
+                    </div>
+                <% end_if %>
+                
             <% end_loop %>
 
         <% end_if %>
