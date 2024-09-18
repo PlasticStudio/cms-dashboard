@@ -10,6 +10,7 @@ use SilverStripe\View\ArrayData;
 use SilverStripe\Core\ClassInfo;
 use SilverStripe\SiteConfig\SiteConfig;
 use SilverStripe\View\Requirements;
+use SilverStripe\ORM\FieldType\DBHTMLText;
 
 class WebsiteHealthPanel extends DashboardPanel
 {
@@ -36,7 +37,7 @@ class WebsiteHealthPanel extends DashboardPanel
     }
 
     public function getContent() {
-        return '<p>See an overview of things that need attention.</p>';
+        return DBHTMLText::create()->setValue('<p>See an overview of things that need attention.</p>');
     }
 
     public function getResults()
