@@ -4,12 +4,10 @@
     align-items: center;
 
     border: 2px solid red;
+}
 
-    &.open {
-        .dashboard-panel__toggle-button {
-            transform: rotate(180deg);
-        }
-    }
+.dashboard-panel__head.open .dashboard-panel__toggle-button {
+    transform: rotate(180deg);        
 }
 
 .dashboard-panel__expandable {
