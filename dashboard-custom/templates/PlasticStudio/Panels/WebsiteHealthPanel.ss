@@ -1,9 +1,9 @@
 <div class="dashboard-panel website-health">
 
-    <div class="website-health__expandable-toggle">
+    <%-- <div class="website-health__expandable-toggle"> --%>
         <h2 class="website-health__title">Website Health</h2>
-        <span class="dashboard-icon fa fa-chevron-right" aria-hidden="true"></span>
-    </div>
+        <%-- <span class="dashboard-icon fa fa-chevron-right" aria-hidden="true"></span>
+    </div> --%>
 
     <% if $Content %>
         <div class="website-health__content">
@@ -11,7 +11,7 @@
         </div>
     <% end_if %>
 
-    <div class="website-health__expandable">
+    <%-- <div class="website-health__expandable"> --%>
 
         <% if $Results %>
 
@@ -48,6 +48,6 @@
 
         <% end_if %>
 
-    </div>
+    <%-- </div> --%>
 
 </div>

@@ -1,5 +1,5 @@
 ---
-Name: app-dashboard
+Name: plasticstudio-dashboard
 ---
 Plastyk\Dashboard\Admin\DashboardAdmin:
   panel_accent_color: '#14e885'
