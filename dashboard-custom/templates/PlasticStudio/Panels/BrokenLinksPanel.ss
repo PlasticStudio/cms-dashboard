@@ -1,10 +1,8 @@
 <div class="dashboard-panel broken-links">
     
     <div class="broken-links__expandable-toggle">
-        <h2>Broken Links</h2>
-        <button class="broken-links__toggle-button">
-            <% include Includes/svg/ChevronIcon %>
-        </button>
+        <h2 class="broken-links__title">Broken Links</h2>
+        <span class="dashboard-icon fa fa-chevron-right" aria-hidden="true"></span>
     </div>
 
     <div class="broken-links__expandable">
