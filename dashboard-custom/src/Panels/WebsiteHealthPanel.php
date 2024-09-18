@@ -17,8 +17,8 @@ class WebsiteHealthPanel extends DashboardPanel
     public function init()
     {
         parent::init();
-        Requirements::css('plastyk/dashboard:client/css/website-health-panel.css');
-        Requirements::css('plastyk/dashboard:client/js/website-health-panel.css');
+        Requirements::css('plasticstudio/dashboard:client/css/website-health-panel.css');
+        Requirements::css('plasticstudio/dashboard:client/js/website-health-panel.css');
     }
     
     public function canView($member = null)
