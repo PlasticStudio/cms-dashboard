@@ -3,7 +3,7 @@
     <div class="broken-links__expandable-toggle">
         <h2>Broken Links</h2>
         <button class="broken-links__toggle-button">
-            <% include ChevronIcon %>
+            <% include Includes/svg/ChevronIcon %>
         </button>
     </div>
 
