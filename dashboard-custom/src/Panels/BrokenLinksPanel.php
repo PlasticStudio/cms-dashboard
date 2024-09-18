@@ -40,6 +40,11 @@ class BrokenLinksPanel extends DashboardPanel
         $apiKey = DashboardAdmin::config()->ohdear_api_key ?: false;
         $ohDear = new OhDear($apiKey);
         $siteID = DashboardAdmin::config()->ohdear_site_id ?: false;
+
+        if (!$apiKey || !$siteID) {
+            return false;
+        }
+
         $brokenLinks = $ohDear->site($siteID)->brokenLinks();
         $results = ArrayList::create();
 
