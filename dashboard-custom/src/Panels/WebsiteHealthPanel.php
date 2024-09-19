@@ -52,7 +52,7 @@ class WebsiteHealthPanel extends DashboardPanel
     }
 
     public function getContent() {
-        return DBHTMLText::create()->setValue('<p>An overview of things that need attention. <strong>Learn about SEO (TODO: link to PS site)</strong></p>');
+        return DBHTMLText::create()->setValue('<p>An overview of items that need attention to improve your site SEO.');
     }
 
     public function getResults()
