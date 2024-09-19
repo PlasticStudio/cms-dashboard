@@ -49,14 +49,20 @@ class MemberStatsPanel extends DashboardPanel
 
     public function getResults()
     {
-        $members = Member::get()->sort('LastVisited DESC')->limit(8);
+        $members = Member::get()->filter([
+            'LastVisited:GreaterThan' => date('c', strtotime('-6 months')),
+        ])->sort('LastVisited DESC')->limit(8);
+
         $results = ArrayList::create();
 
         foreach ($members as $member) {
+
+            $lastVisit = date('d/m/Y H:i:s', strtotime($member->LastVisited));
+
             $data = ArrayData::create(
                 [
-                    'Name' => $member->Fullname,
-                    'LastVisited' => $member->LastVisited,
+                    'Name' => $member->FirstName . ' ' . $member->Surname,  
+                    'LastVisited' => $lastVisit,
                 ]
             );
             $results->push($data); 
