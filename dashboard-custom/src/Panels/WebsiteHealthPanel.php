@@ -30,7 +30,7 @@ class WebsiteHealthPanel extends DashboardPanel
         $allowed_panels = DashboardAdmin::config()->allowed_panels;
         $allowed = false;
 
-        if ($allowed_panels && in_array(ClassInfo::class_name($this->ClassName), $allowed_panels)) {
+        if ($allowed_panels && in_array(ClassInfo::class_name($this), $allowed_panels)) {
             $allowed = true;
         }
 
@@ -52,7 +52,7 @@ class WebsiteHealthPanel extends DashboardPanel
     }
 
     public function getContent() {
-        return DBHTMLText::create()->setValue('<p>See an overview of things that need attention.</p>');
+        return DBHTMLText::create()->setValue('<p>An overview of things that need attention.</p>');
     }
 
     public function getResults()

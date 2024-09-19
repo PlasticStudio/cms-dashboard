@@ -19,7 +19,7 @@ class SupportTicketPanel extends DashboardPanel
         $allowed_panels = DashboardAdmin::config()->allowed_panels;
         $allowed = false;
 
-        if ($allowed_panels && in_array(ClassInfo::class_name($this->ClassName), $allowed_panels)) {
+        if ($allowed_panels && in_array(ClassInfo::class_name($this), $allowed_panels)) {
             $allowed = true;
         }
 
@@ -64,8 +64,7 @@ class SupportTicketPanel extends DashboardPanel
         $contactEmail = DashboardAdmin::config()->contact_email ?: false;
         $siteName = SiteConfig::current_site_config()->Title;
 
-        $content = '<p>Contact us if you would like to submit a support ticket or would like any assistance.</p>';
-        $content .= '<p><a href="mailto:' . $contactEmail . '?subject=New support request from ' . $siteName . '" target="_blank" class="btn btn-primary">Request support</a></p>';
+        $content = '<p><a href="mailto:' . $contactEmail . '?subject=New support request from ' . $siteName . '" target="_blank" class="btn btn-primary">Request a support ticket</a></p>';
         
         return DBField::create_field('HTMLText', $content);
     }

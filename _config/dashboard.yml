@@ -2,4 +2,5 @@
 Name: plasticstudio-dashboard
 ---
 Plastyk\Dashboard\Admin\DashboardAdmin:
+  contact_email: 'support@psdigital.co.nz'
   panel_accent_color: '#14e885'

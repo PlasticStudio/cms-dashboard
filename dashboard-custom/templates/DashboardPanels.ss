@@ -12,16 +12,17 @@
 		</div>
 
 		<div class="row">
-			<div class="col-12">
+			<div class="col-lg-6">
 				$showPanel(Plastyk\Dashboard\Panels\QuickLinksPanel)
+			</div>
+			<div class="col-lg-6">
+				$showPanel(PlasticStudio\Panels\SupportTicketPanel)
 			</div>
 		</div>
 
 		<% if $canViewPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel) || $canViewPanel(PlasticStudio\Panels\SupportTicketPanel) || $canViewPanel(Plastyk\Dashboard\Panels\UsefulLinksPanel) %>
 			<div class="row">			
-				<div class="col-xl-4">
-					$showPanel(PlasticStudio\Panels\SupportTicketPanel)
-				</div>
+				
 			</div>
 			
 			<div class="row">
