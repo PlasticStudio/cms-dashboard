@@ -39,9 +39,13 @@
     width: 15px;
     height: 15px;
     display: block;
+}
 
-    svg {
-        max-width: 100%;
-        height: auto;
-    }
+.broken-link__fix span:hover svg path {
+    stroke: #0071c4;
+}
+
+.broken-link__fix span svg {
+    max-width: 100%;
+    height: auto;
 }

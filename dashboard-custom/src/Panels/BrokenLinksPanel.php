@@ -74,7 +74,7 @@ class BrokenLinksPanel extends DashboardPanel
                     'StatusCode' => $link->statusCode,
                     'CrawledUrl' => $link->crawledUrl,
                     'FoundOnUrl' => $link->foundOnUrl,
-                    'LinkText' => $link->linkText,
+                    'LinkText' => trim(strip_tags($link->linkText)),
                     'Fix' => $page ? $page->CMSEditLink() : false
                 ]
             );
