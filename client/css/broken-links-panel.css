@@ -34,3 +34,13 @@
 .broken-link__code--code-500 {
     background-color: rgb(221, 1, 1);
 }
+
+.broken-link__fix span {
+    width: 15px;
+    height: 15px;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
