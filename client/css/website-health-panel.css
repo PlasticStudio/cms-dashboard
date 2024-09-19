@@ -56,6 +56,21 @@
     display: block;
 } */
 
+.result__title span {
+    display: block;
+    width: 15px;
+    height: 15px;
+}
+
+.result__title span:hover svg path {
+    stroke: #0071c4;
+}
+
+.result__title span svg {
+    max-width: 100%;
+    height: auto;
+}
+
 .result__list {
     padding-left: 15px;
     margin-bottom: 0;
