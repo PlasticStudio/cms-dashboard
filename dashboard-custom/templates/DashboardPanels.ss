@@ -20,7 +20,7 @@
 			</div>
 		</div>
 
-		<% if $canViewPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel) || $canViewPanel(PlasticStudio\Panels\SupportTicketPanel) || $canViewPanel(Plastyk\Dashboard\Panels\UsefulLinksPanel) %>
+		<% if $canViewPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel) || $canViewPanel(PlasticStudio\Panels\WebsiteHealthPanel) %>
 			<div class="row">			
 				
 			</div>
@@ -28,10 +28,6 @@
 			<div class="row">
 				<div class="col-xl-4">
 					$showPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel)
-				</div>
-				
-				<div class="col-xl-4">
-					$showPanel(Plastyk\Dashboard\Panels\UsefulLinksPanel)
 				</div>
 
 				<div class="col-xl-4">
