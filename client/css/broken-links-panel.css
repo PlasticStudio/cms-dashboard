@@ -12,7 +12,7 @@
     font-size: 20px;
 }
 
-.broken-links__title {
+.cms-content.DashboardAdmin .dashboard-panel.broken-links h3.broken-links__title {
     margin-bottom: 0;
 }
 

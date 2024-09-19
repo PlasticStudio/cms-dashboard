@@ -89,6 +89,7 @@ class WebsiteHealthPanel extends DashboardPanel
                     'Title' => 'Settings',
                     'CMSEditLink' => $siteConfigEditLink,
                     'ReviewItems' => $settingsItems,
+                    'ReviewItemsCount' => $settingsItems->count(),
                 ]
             );
 

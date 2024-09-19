@@ -15,7 +15,7 @@
 
         <% if $Results %>
 
-            <% loop $Results %>
+            <% loop $Results.Sort('ReviewItemsCount') %>
                 
                 <% if $ReviewItems %>
                     <div class="result">
