@@ -8,6 +8,8 @@ use Plastyk\Dashboard\Admin\DashboardAdmin;
 use SilverStripe\View\Requirements;
 use SilverStripe\Core\ClassInfo;
 use SilverStripe\Security\Member;
+use SilverStripe\ORM\ArrayList;
+use SilverStripe\View\ArrayData;
 
 class MemberStatsPanel extends DashboardPanel
 {
@@ -47,7 +49,18 @@ class MemberStatsPanel extends DashboardPanel
 
     public function getResults()
     {
-        $results = Member::get()->sort('FirstName DESC')->limit(8);
+        $members = Member::get()->sort('LastVisited DESC')->limit(8);
+        $results = ArrayList::create();
+
+        foreach ($members as $member) {
+            $data = ArrayData::create(
+                [
+                    'Name' => $member->Fullname,
+                    'LastVisited' => $member->LastVisited,
+                ]
+            );
+            $results->push($data); 
+        }
 
         return $results;
     }
