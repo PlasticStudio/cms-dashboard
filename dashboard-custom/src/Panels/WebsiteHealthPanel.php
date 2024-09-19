@@ -150,7 +150,7 @@ class WebsiteHealthPanel extends DashboardPanel
                         'Title' => $page->Title,
                         'CMSEditLink' => '/admin/pages/edit/show/' . $page->ID,
                         'ReviewItems' => $reviewItems,
-                        'ReviewItemsCount' => $settingsItems->count(),
+                        'ReviewItemsCount' => $reviewItems->count(),
                     ]
                 );
 

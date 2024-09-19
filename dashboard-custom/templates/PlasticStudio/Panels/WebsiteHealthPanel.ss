@@ -30,6 +30,7 @@
                             </p>
                         </td>
                         <td>
+                            Count: $ReviewItemsCount
                             <% loop $ReviewItems %>
                                 <li>$Title</li>
                             <% end_loop %>
