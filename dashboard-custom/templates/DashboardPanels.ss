@@ -18,18 +18,22 @@
 			</div>
 		</div>
 
-		<% if $canViewPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel) || $canViewPanel(PlasticStudio\Panels\WebsiteHealthPanel) %>
+		<% if $canViewPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel) || $canViewPanel(PlasticStudio\Panels\WebsiteHealthPanel) || $canViewPanel(PlasticStudio\Panels\MemberStatsPanel) %>
 			<div class="row">			
 				
 			</div>
 			
 			<div class="row">
-				<div class="col-xl-4">
+				<div class="col-lg-6 col-xl-4">
 					$showPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel)
 				</div>
 
-				<div class="col-xl-4">
+				<div class="col-lg-6 col-xl-4">
 					$showPanel(PlasticStudio\Panels\WebsiteHealthPanel)
+				</div>
+
+				<div class="col-lg-6 col-xl-4">
+					$showPanel(PlasticStudio\Panels\MemberStatsPanel)
 				</div>
 			</div>
 		<% end_if %>
