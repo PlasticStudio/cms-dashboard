@@ -19,7 +19,7 @@
                 </tr>
             </thead>
             <tbody>
-                <% loop $Results.Sort('ReviewItemsCount') %>
+                <% loop $Results.Sort(ReviewItemsCount DESC) %>
                     <tr class="broken-link">
                         <td>
                             <p class="result__title">
