@@ -32,9 +32,11 @@
                             <td>
                                 $LinkText
                             </td>
-                            <%-- <td>
-                                <a href="#">Ignore (TODO)</a>
-                            </td>                  --%>
+                            <% if $Fix %>
+                                <td>
+                                    <a href="$Fix">Fix</a>
+                                </td>
+                            <% end_if %>               
                         </tr>
                     <% end_loop %>
                 </tbody>

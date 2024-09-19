@@ -10,6 +10,7 @@ use Plastyk\Dashboard\Model\DashboardPanel;
 use Plastyk\Dashboard\Admin\DashboardAdmin;
 use SilverStripe\View\Requirements;
 use SilverStripe\Core\ClassInfo;
+use SilverStripe\CMS\Model\SiteTree;
 
 class BrokenLinksPanel extends DashboardPanel
 {
@@ -64,12 +65,17 @@ class BrokenLinksPanel extends DashboardPanel
 
         foreach ($brokenLinks as $link) {
 
+            $path = parse_url($link->foundOnUrl, PHP_URL_PATH);
+            $pageURLSegment = basename(rtrim($path, '/'));
+            $page = SiteTree::get()->filter('URLSegment', $pageURLSegment)->first();
+
             $data = ArrayData::create(
                 [
                     'StatusCode' => $link->statusCode,
                     'CrawledUrl' => $link->crawledUrl,
                     'FoundOnUrl' => $link->foundOnUrl,
                     'LinkText' => $link->linkText,
+                    'Fix' => $page ? $page->CMSEditLink() : false
                 ]
             );
             $results->push($data);            
