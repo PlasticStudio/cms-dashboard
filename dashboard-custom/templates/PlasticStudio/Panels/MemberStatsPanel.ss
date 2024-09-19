@@ -16,7 +16,7 @@
                             $Name
                         </td>
                         <td>
-                            <$LastVisited
+                            $LastVisited
                         </td>
                     </tr>
                 <% end_loop %>
