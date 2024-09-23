@@ -1,7 +1,6 @@
 ---
-Name: app-dashboard
+Name: plasticstudio-dashboard
 ---
 Plastyk\Dashboard\Admin\DashboardAdmin:
-  contact_email: 'email@example.com'
-  contact_name: 'Developer Name'
-  panel_accent_color: '#efbc2a'
+  contact_email: 'support@psdigital.co.nz'
+  panel_accent_color: '#14e885'

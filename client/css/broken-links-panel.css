@@ -1,0 +1,52 @@
+.broken-links__expandable-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.broken-links__expandable-toggle.open .dashboard-icon {
+    transform: rotate(90deg);
+}
+
+.broken-links .dashboard-icon {
+    font-size: 20px;
+}
+
+.cms-content.DashboardAdmin .dashboard-panel.broken-links h3.broken-links__title {
+    margin-bottom: 0;
+}
+
+.broken-links__expandable {
+    display: none;
+    padding-top: 25px;
+}
+
+.broken-link__code {
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.broken-link__code--code-404 {
+    background-color: rgb(255, 115, 0);
+}
+
+.broken-link__code--code-500 {
+    background-color: rgb(221, 1, 1);
+}
+
+.broken-link__fix span {
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+
+.broken-link__fix span:hover svg path {
+    stroke: #0071c4;
+}
+
+.broken-link__fix span svg {
+    max-width: 100%;
+    height: auto;
+}

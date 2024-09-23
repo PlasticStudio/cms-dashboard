@@ -1,16 +1,14 @@
 <?php
 
-namespace Skeletor\Extensions;
+namespace PlasticStudio\Extensions;
 
 use SilverStripe\Core\Extension;
 use SilverStripe\View\Requirements;
 
 class DashboardAdminExtension extends Extension
 {
-    public function init()
+    public function updateInit()
     {
-        // parent::init();
-        Requirements::javascript('app/client/dist/dashboardApp.js');
+        Requirements::css('plasticstudio/dashboard:client/css/dashboard-panels.css');
     }
-
 }
