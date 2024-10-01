@@ -46,6 +46,6 @@
 
     <% end_if %>
 
-    <br /><a href="https://www.psdigital.co.nz/seo-overview" target="_blank" class="btn btn-primary">Learn about SEO</a></p>
+    <br /><a href="https://www.psdigital.co.nz/seo-basic-checks" target="_blank" class="btn btn-primary">Learn about SEO</a></p>
 
 </div>
