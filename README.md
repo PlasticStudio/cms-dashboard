@@ -1,7 +1,6 @@
 # Dashboard
 
-CMS dashboard, uses plastyk/silverstripe-dashboard and extends with custom panels.
+CMS dashboard for SilverStripe 5, uses plastyk/silverstripe-dashboard and extends with custom panels.
 
-## 
-
-### Quicklinks extension
+## Website health panel
+Custom panel that checks for missing meta title, meta description and setting email recipients.
