@@ -6,6 +6,7 @@ CMS dashboard for SilverStripe 5, uses plastyk/silverstripe-dashboard and extend
 - Create local dashboard.yml in /_config
 - Update panel accent colour to site specific
 - Add client ID from OhDear
+- Update list of default panels if required
 `
 ---
 Name: plasticstudio-dashboard
