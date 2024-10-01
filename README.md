@@ -7,14 +7,14 @@ CMS dashboard for SilverStripe 5, uses plastyk/silverstripe-dashboard and extend
 - Update panel accent colour to site specific
 - Add client ID from OhDear
 - Update list of default panels if required
-`
+```
 ---
 Name: plasticstudio-dashboard
 ---
 Plastyk\Dashboard\Admin\DashboardAdmin:
   contact_email: 'support@psdigital.co.nz'
   panel_accent_color: '#14e885'
-`
+```
 
 ### Website health panel
 Custom panel that checks for missing meta title, meta description and setting email recipients.
