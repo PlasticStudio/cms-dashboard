@@ -14,6 +14,14 @@ Name: plasticstudio-dashboard
 Plastyk\Dashboard\Admin\DashboardAdmin:
   contact_email: 'support@psdigital.co.nz'
   panel_accent_color: '#14e885'
+  allowed_panels:
+    - Plastyk\Dashboard\Panels\UpdatePanel
+    - Plastyk\Dashboard\Panels\QuickLinksPanel
+    - Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel
+    - PlasticStudio\Panels\SupportTicketPanel
+    - PlasticStudio\Panels\WebsiteHealthPanel
+    - PlasticStudio\Panels\BrokenLinksPanel
+    - PlasticStudio\Panels\MemberStatsPanel
 ```
 
 ### Website health panel
