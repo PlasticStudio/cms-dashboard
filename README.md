@@ -14,6 +14,8 @@ Name: plasticstudio-dashboard
 Plastyk\Dashboard\Admin\DashboardAdmin:
   contact_email: 'support@psdigital.co.nz'
   panel_accent_color: '#14e885'
+  ohdear_api_key: 'NSHqPBUdV3EOpqSmQr6QjoQHUgGbDI3JkFpiWCVjb94a5b47'
+  # ohdear_site_id: '40394' // get from OhDear site page
   allowed_panels:
     - Plastyk\Dashboard\Panels\UpdatePanel
     - Plastyk\Dashboard\Panels\QuickLinksPanel
