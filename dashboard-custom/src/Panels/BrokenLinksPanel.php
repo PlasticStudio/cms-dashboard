@@ -43,9 +43,21 @@ class BrokenLinksPanel extends DashboardPanel
     {
         $data = parent::getData();
 
+        $data['Connection'] = $this->checkOhDearConfig();
         $data['Results'] = $this->getResults();
-
+        
         return $data;
+    }
+
+    public function checkOhDearConfig() {
+        $apiKey = DashboardAdmin::config()->ohdear_api_key ?: false;
+        $siteID = DashboardAdmin::config()->ohdear_site_id ?: false;
+
+        if (!$apiKey || !$siteID) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
     public function getResults()
