@@ -26,7 +26,7 @@
         "silverstripe/vendor-plugin": "^2",
 		"plastyk/dashboard": "^3.0",
     	"ohdearapp/ohdear-php-sdk": "^3.10",
-		"plasticstudio/member-activity": "^1.0"
+		"plasticstudio/member-activity": "^1.0.1"
 	},
 	"minimum-stability": "dev"
 }
