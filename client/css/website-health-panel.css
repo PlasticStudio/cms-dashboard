@@ -76,6 +76,10 @@
     margin-bottom: 0;
 }
 
-.result__list li {
-    
+.website-health .table tr td {
+    width: 45%;
+}
+
+.website-health .col-small {
+    width: 10%
 }
