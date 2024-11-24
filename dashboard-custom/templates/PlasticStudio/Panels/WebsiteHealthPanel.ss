@@ -22,7 +22,7 @@
                 </tr>
             </thead>
             <tbody>
-                <% loop $Results.Sort(ReviewItemsCount DESC).Limit(10) %>
+                <% loop $Results %>
                     <tr class="table__row">
                         <td>
                             <p class="result__title">

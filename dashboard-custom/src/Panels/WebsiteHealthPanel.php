@@ -57,7 +57,12 @@ class WebsiteHealthPanel extends DashboardPanel
 
     public function getResults()
     {
-        $pages = Page::get();
+        $pages = Page::get()->exclude([
+            'ClassName' => 'SilverStripe\CMS\Model\VirtualPage',
+            'ClassName' => 'SilverStripe\CMS\Model\RedirectorPage',
+            'ClassName' => 'SilverStripe\ErrorPage\ErrorPage',
+            'ClassName' => 'PlasticStudio\SEO\Pages\HTMLSitemap',
+        ]);
         $results = ArrayList::create();
 
         // Settings
@@ -158,7 +163,7 @@ class WebsiteHealthPanel extends DashboardPanel
             }                     
         }
 
-        return $results;
+        return $results->Sort('ReviewItemsCount DESC')->Limit(10);
     }
 
     private function convertToNewSlug($string) {
