@@ -2,6 +2,12 @@
 
 CMS dashboard for SilverStripe 5, uses plastyk/silverstripe-dashboard and extends with custom panels.
 
+## Install
+
+```
+composer require plasticstudio/dashboard
+```
+
 ## Config
 - Create local dashboard.yml in /_config
 - Update panel accent colour to site specific
@@ -9,7 +15,7 @@ CMS dashboard for SilverStripe 5, uses plastyk/silverstripe-dashboard and extend
 - Update list of default panels if required
 ```
 ---
-Name: plasticstudio-dashboard
+Name: PROJECT_NAME-dashboard
 ---
 Plastyk\Dashboard\Admin\DashboardAdmin:
   contact_email: 'support@psdigital.co.nz'
