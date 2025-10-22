@@ -72,7 +72,7 @@ class BrokenLinksPanel extends DashboardPanel
             return false;
         }
 
-        $brokenLinks = $ohDear->monitors($siteID)->brokenLinks();
+        $brokenLinks = $ohDear->brokenLinks($siteID);
         $results = ArrayList::create();
 
         foreach ($brokenLinks as $link) {
