@@ -24,8 +24,8 @@
 		"silverstripe/cms": "^5",
 		"silverstripe/framework": "^5",
         "silverstripe/vendor-plugin": "^2",
-		"plastyk/dashboard": "^4",
-    	"ohdearapp/ohdear-php-sdk": "^3.10",
+		"plastyk/dashboard": "^3.0",
+    	"ohdearapp/ohdear-php-sdk": "^4",
 		"plasticstudio/member-activity": "^1.0.1"
 	},
 	"minimum-stability": "dev"
