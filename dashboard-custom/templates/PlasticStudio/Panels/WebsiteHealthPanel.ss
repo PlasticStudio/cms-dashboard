@@ -11,7 +11,9 @@
     <% if $Results %>
 
         <br/>
-        <p>Displaying first 10 of $Results.Count items.</p>
+        <% if $Results.Count > 10 %>
+            <p>Displaying first 10 of $Results.Count items.</p>
+        <% end_if %>
 
         <table class="table">
             <thead>
