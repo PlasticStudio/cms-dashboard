@@ -6,6 +6,7 @@ use Page;
 use SilverStripe\Security\Permission;
 use Plastyk\Dashboard\Model\DashboardPanel;
 use Plastyk\Dashboard\Admin\DashboardAdmin;
+use SilverStripe\Versioned\Versioned;
 use SilverStripe\ORM\ArrayList;
 use SilverStripe\View\ArrayData;
 use SilverStripe\Core\ClassInfo;
@@ -57,7 +58,7 @@ class WebsiteHealthPanel extends DashboardPanel
 
     public function getResults()
     {
-        $pages = Page::get()->exclude([
+        $pages = Versioned::get_by_stage(Page::class, 'Live')->exclude([
             'ClassName' => 'SilverStripe\CMS\Model\VirtualPage',
             'ClassName' => 'SilverStripe\CMS\Model\RedirectorPage',
             'ClassName' => 'SilverStripe\ErrorPage\ErrorPage',
