@@ -18,29 +18,25 @@
 			</div>
 		</div>
 
-		<% if $canViewPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel) || $canViewPanel(PlasticStudio\Panels\WebsiteHealthPanel) || $canViewPanel(PlasticStudio\Panels\MemberStatsPanel) %>
+		<% if $canViewPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel) || $canViewPanel(PlasticStudio\Panels\WebsiteHealthPanel) || $canViewPanel(PlasticStudio\Panels\MemberStatsPanel) || $canViewPanel(PlasticStudio\Panels\BrokenLinksPanel) %>
 			<div class="row">			
 				
 			</div>
 			
 			<div class="row">
-				<div class="col-lg-6 col-xl-4">
+				<div class="col-lg-6">
 					$showPanel(Plastyk\Dashboard\Panels\RecentlyEditedPagesPanel)
 				</div>
 
-				<div class="col-lg-6 col-xl-4">
+				<div class="col-lg-6">
 					$showPanel(PlasticStudio\Panels\WebsiteHealthPanel)
 				</div>
 
-				<div class="col-lg-6 col-xl-4">
+				<div class="col-lg-6">
 					$showPanel(PlasticStudio\Panels\MemberStatsPanel)
 				</div>
-			</div>
-		<% end_if %>
 
-		<% if $canViewPanel(PlasticStudio\Panels\BrokenLinksPanel) %>
-			<div class="row">
-				<div class="col-12">
+				<div class="col-lg-6">
 					$showPanel(PlasticStudio\Panels\BrokenLinksPanel)
 				</div>
 			</div>

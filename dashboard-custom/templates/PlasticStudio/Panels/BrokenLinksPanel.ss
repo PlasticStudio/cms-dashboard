@@ -1,11 +1,12 @@
 <div class="dashboard-panel broken-links">
     
-    <div class="broken-links__expandable-toggle">
+    <%-- <div class="broken-links__expandable-toggle"> --%>
         <h3 class="broken-links__title">Broken Links</h3>
-        <span class="dashboard-icon fa fa-chevron-right" aria-hidden="true"></span>
-    </div>
+        <%-- <span class="dashboard-icon fa fa-chevron-right" aria-hidden="true"></span> --%>
+    <%-- </div> --%>
 
-    <div class="broken-links__expandable">
+    <%-- <div class="broken-links__expandable"> --%>
+    <div class="broken-links">
 
         <% if not $Connection %>
 
