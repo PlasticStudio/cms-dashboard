@@ -8,8 +8,8 @@ use Plastyk\Dashboard\Admin\DashboardAdmin;
 use SilverStripe\View\Requirements;
 use SilverStripe\Core\ClassInfo;
 use SilverStripe\Security\Member;
-use SilverStripe\ORM\ArrayList;
-use SilverStripe\View\ArrayData;
+use SilverStripe\Model\List\ArrayList;
+use SilverStripe\Model\ArrayData;
 
 class MemberStatsPanel extends DashboardPanel
 {

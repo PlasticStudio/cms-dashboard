@@ -3,8 +3,8 @@
 namespace PlasticStudio\Panels;
 
 use OhDear\PhpSdk\OhDear;
-use SilverStripe\ORM\ArrayList;
-use SilverStripe\View\ArrayData;
+use SilverStripe\Model\List\ArrayList;
+use SilverStripe\Model\ArrayData;
 use SilverStripe\Security\Permission;
 use Plastyk\Dashboard\Model\DashboardPanel;
 use Plastyk\Dashboard\Admin\DashboardAdmin;
