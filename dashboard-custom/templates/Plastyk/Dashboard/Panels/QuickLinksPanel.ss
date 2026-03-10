@@ -1,36 +1,8 @@
 <div class="dashboard-panel quick-links-panel">
-
-    <% if $CanViewPages %>
-        <a href="{$AdminURL}/pages/">
-            <span class="dashboard-icon fa fa-sitemap" aria-hidden="true"></span>
-            <%t CMSPagesController.MENUTITLE 'Pages' %>
+    <% loop $QuickLinks %>
+        <a href="{$Url}">
+            <span class="dashboard-icon fa {$Icon}" aria-hidden="true"></span>
+            {$Title}
         </a>
-    <% end_if %>
-
-    <% if $CanViewUsers %>
-        <a href="{$AdminURL}/security/">
-            <span class="dashboard-icon fa fa-users" aria-hidden="true"></span>
-            <%t SecurityAdmin.MENUTITLE 'Security' %>
-        </a>
-    <% end_if %>
-
-    <%-- <% if $CanViewProperties %>
-        <a href="{$AdminURL}/properties/">
-            <span class="dashboard-icon fa fa-building" aria-hidden="true"></span>
-            Properties
-        </a>
-
-        <a href="{$AdminURL}/properties/Property/EditForm/field/Property/item/new">
-            <span class="dashboard-icon fa fa-plus" aria-hidden="true"></span>
-            New Property
-        </a>
-    <% end_if %> --%>
-
-    <% if $CanViewSettings %>
-        <a href="{$AdminURL}/settings/">
-            <span class="dashboard-icon fa fa-cogs" aria-hidden="true"></span>
-            <%t CMSSettingsController.MENUTITLE 'Settings' %>
-        </a>
-    <% end_if %>
-
+    <% end_loop %>
 </div>
